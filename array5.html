@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Accept 5 numbers in array and then find its sum in javascript</title>
+        <style>
+            body
+            {
+                background-image:url('#');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <b><u>ENTER THE NUMBERS HERE</u></b>
+            <hr>
+            <strong>Enter the numbers : </strong><input id="num" placeholder="Here"><br>
+            <hr>
+            <button id="c" onclick="push()" size="100px">Click to Add</button>
+            <button id="d" onclick="display()" size="100px">Click to Display the Elements in the Array</button>
+            <p id="fa">See Here</p>
+            <button id="e" onclick="add()" size="100px">Click to Sum the Elements in the Array</button>
+            <p id="af">See Here</p>
+            <script>
+                var x = 0;
+                var arr = Array();
+                function push()
+                {
+                    arr[x] = document.getElementById('num').value;
+                    alert("Element : " + arr[x] + " added at " + x);
+                    x++;
+                }
+                function display()
+                {
+                    var z = "";
+                    for (var y=0; y<arr.length; y++)
+                    {
+                        z += "Element " + y + " = " + arr[y] + "<br>";
+                    }
+                    document.getElementById("fa").innerHTML=z
+                }
+                function add()
+                {
+                    var q = 0;
+                    var p = 0;
+                    for (var s=0; s<arr.length; s++)
+                    {
+                        q += Number(arr[s]); 
+                    }
+                    alert("Elements Added Successfully");
+                    document.getElementById("af").innerHTML="The Sum of the Elements in the Array are : " + q;
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Create 3 checkbox and display the selected checkbox in javascript</title>
+        <style>
+            body
+            {
+                background-image:url('#');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <b><u>PLEASE TICK THE DESIRED HOBBIES HERE</u></b>
+            <hr>
+            <strong>Tick the desired hobbies : </strong>
+            <hr>
+            Hobbies<br>
+            <input type="checkbox" name="hobby" value="Music"> Music 
+            <input type="checkbox" name="hobby" value="Dance"> Dance 
+            <input type="checkbox" name="hobby" value="Sports"> Sports
+            <hr>
+            <button id="f" onclick="display()" size="100px">Click to Display Hobbies</button>
+            <p id="cfs">See Here</p>
+            <script>
+                function display()
+                {
+                    var chbxs = document.getElementsByName('hobby');
+                    var rlt = " ";
+                    for (var i = 0; i < chbxs.length; i++)
+                    {
+                        if (chbxs[i].checked)
+                        {
+                            rlt += chbxs[i].value + " ";
+                        }
+                    }
+                    document.getElementById("cfs").innerHTML="Selected Hobby/Hobbies" + "<br>" + "<br>" + rlt;
+                }
+            </script>
+        </div>
+    </body>
+</html>

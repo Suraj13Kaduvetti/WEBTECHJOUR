@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Compare the three numbers given in javascript</title>
+        <style>
+            body
+            {
+                background-image:url('#');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!--<center>-->
+                <b><u>ENTER THE NUMBERS HERE</u></b>
+                <hr>
+                <strong>Enter first number : </strong><input id="first" placeholder="Here"><br>
+                <strong>Enter second number : </strong><input id="second" placeholder="Here"><br>
+                <strong>Enter third number : </strong><input id="third" placeholder="Here"><br>
+                <hr>
+                <button id="a" onclick="find()" size="100px">Click to Find</button>
+                <p id="gr">See Here</p>
+            <!--</center>-->
+            <script>
+                function great(n_1,n_2,n_3)
+                {
+                    if (n_1 > n_2 && n_1 > n_3)
+                    {
+                        return n_1;
+                    }
+                    else if (n_2 > n_3 && n_2 > n_1)
+                    {
+                        return n_2;
+                    } 
+                    else
+                    {
+                        return n_3;
+                    }
+                }
+                function find()
+                {
+                    var n_1 = document.getElementById("first").value;
+                    var n_2 = document.getElementById("second").value;
+                    var n_3 = document.getElementById("third").value;
+                    var a = great(n_1,n_2,n_3);
+                    document.getElementById("gr").innerHTML="The Greater Number among " + " " + n_1 + " " + "," + " " + n_2 + " and " + n_3 + " is " + a; 
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Calculate area of circle in javascript</title>
+        <style>
+            body
+            {
+                background-image:url('#');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <b><u>ENTER THE NUMBERS HERE</u></b>
+            <hr>
+            <strong>Enter radius : </strong><input id="r" placeholder="Here"><br>
+            <hr>
+            <button id="b" onclick="find()" size="100px">Click to Find</button>
+            <p id="ar">See Here</p>
+            <script>
+                function area(rad)
+                {
+                    if (rad == 1)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        rad2 = rad*rad;
+                        return rad2;
+                    }
+                }
+                function find()
+                {
+                    var rad = document.getElementById('r').value;
+                    var b = area(rad);
+                    document.getElementById("ar").innerHTML="The area if the given radius " + rad + " is " + b;
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>FORMS IN HTML</title>
+        <style type="text/css">
+            body
+            {
+                background-color:ivory;
+            }
+            form
+            {
+                color:navy;
+            }
+            hr
+            {
+                color:darkkhaki;
+                background-color:darkkhaki;
+            }
+        </style>
+        <!--<link rel="stylesheet" href="D:\web technology\css\external.css">-->
+        <script src="\web technology\js\form_validation.js"></script>
+    </head>
+    <body>
+        <center>
+            <form id="mainform"  method="post"><!--onsubmit="return form_valid()-->
+                <p>Date Section</p>
+                Date<span style="color:red;">*</span> : <input type="date" name="fdate" required/><br>
+                <hr>
+                <p>NAME Section</p>
+                First Name<span style="color:red;">*</span> : <input type="text" size="30" name="fname" required maxlength="45"/><br>
+                Middle Name<span style="color:red;">*</span> : <input type="text" size="30" name="mname" required maxlength="45"/><br>
+                Last Name<span style="color:red;">*</span> : <input type="text" size="30" name="lname" required maxlength="45"/>
+                <hr>
+		        <p>Date Of Birth Section</p>
+		        Date of Birth<span style="color:red;">*</span> : <input type="date" name="dob" required/><br>
+		        <hr>
+                <p>GENDER Section <span style="color:red;">*</span></p>
+                Male : <input type="radio" name="gender" value="Male"/><br>
+                Female : <input type="radio" name="gender" value="Female"/><br>
+                Other : <input type="radio" name="gender" value="Other"/><br>
+                <hr>
+                <p>ADDRESS Section</p>
+                Address<span style="color:red;">*</span><br><textarea rows="10" cols="20" name="address" required maxlength="200"></textarea>
+                <hr>
+                <p>Contact Section</p>
+                Contact/Phone/Mobile No.<span style="color:red;">*</span> : <input type="text" size="30" name="contact" required maxlength="11"/><br>
+                Telephone/Landline No.<span style="color:red;">*</span> : |022-| <input type="text" size="30" name="teleland" required maxlength="9"/><br>
+                <hr>
+                <p>Email Section</p>
+                Email<span style="color:red;">*</span> : <input type="text" size="50" name="email" required maxlength="45"/><br>
+                <hr>
+                <p>PhotoGraph Section</p>
+                Photo<span style="color:red;">*</span><br><input type="file" name="Upload Photo" accept="image/*"/>
+                <hr>
+                <p>USERNAME Section</p>
+                Username<span style="color:red;">*</span> : <input type="text" name="user" required maxlength="45"/>
+                <hr>
+                <p>PASSWORD Section</p>
+                Password<span style="color:red;">*</span> : <input type="Password" name="Password1" required maxlength="16"/><br><br>
+                Confirm Password<span style="color:red;">*</span> : <input type="text" name="Password2" required maxlength="16"/>
+                <hr>
+                <p>QUALIFICATION Section</p>
+                Qualification <span style="color:red;">*</span><br>
+                <select name "Qualification">
+                    <option value="choose from list" selected="Selected">Choose From The List Below</option>
+                    <option value="SSC">SSC</option>
+                    <option value="HSC">HSC</option>
+                    <option value="UG">Under Graduate(UG)</option>
+                    <option value="PG">Post Graduate(PG)</option>
+                    <option value="DO">DropOut</option>
+                    <option value="NONE">NONE OF THE ABOVE</option>
+                </select>
+                <hr>
+                <p>DOCUMENT Section</p>
+                Document <span style="color:red;">*</span><br>
+                SSC : <input type="checkbox" name="SSC" value="SSC"/><br>
+                HSC : <input type="checkbox" name="HSC" value="HSC"/><br>
+                Under Graduate (UG) : <input type="checkbox" name="UG" value="UG"/><br>
+                Post Graduate (PG) : <input type="checkbox" name="PG" value="PG"/><br>
+                Drop Out : <input type="checkbox" name="DO" value="DO"/><br>
+                NONE OF THE ABOVE : <input type="radio" name="NONE" value="NONE"/><br>
+                <hr>
+                <p>SUMIT AND RESET Section</p>
+                Submit<br>
+                <input type="SUBMIT" value="Submit" onclick="form_valid()"/><br>
+                Reset<br>
+                <input type="RESET" value="Reset" onclick="form_reset()"/><br>
+            </form>
+        </center>
+    </body>
+</html>
