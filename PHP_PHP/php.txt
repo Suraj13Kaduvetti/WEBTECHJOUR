@@ -1,0 +1,4 @@
+THis is a text file for php 
+
+We can edit as well as read it
+
