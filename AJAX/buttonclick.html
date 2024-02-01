@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Handle Synchronous Request</title>
+    </head>
+    <body>
+        <div>
+            <h2>The XMLHttpRequest Object</h2>
+            <button type="button" onclick="showFile()">Change Content</button>
+        </div>
+
+        <script>
+            function showFile() 
+            {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function()
+                {
+                    if (this.readyState == 4 && this.status == 200)
+                    {
+                        document.write(this.responseText());
+                    }
+                }
+                xhttp.open("GET","abc.txt",false);
+                xhttp.send();
+                //document.write(xhttp.responseText);
+            }
+        </script>
+
+    </body>
+</html>

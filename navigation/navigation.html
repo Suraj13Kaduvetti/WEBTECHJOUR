@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>NAVIGATION ALONG MULTIPLE PAGES WITH CSS</title>
+        <metahttp-equiv="Refresh" content="5; url=navigation.html">
+        <style type="text/css">
+            body
+            {
+                background-color:darkgoldenrod;
+            }
+            a:link
+            {
+                color:blue;
+                background-color:aquamarine;
+                text-decoration:solid;
+            }
+            a:visited
+            {
+                color:green;
+                background-color:yellow;
+                text-decoration:dotted;
+            }
+            a:hover
+            {
+                color:orange;
+                background-color:orchid;
+                text-decoration:underline;
+            }
+            a:active
+            {
+                color:red;
+                background-color:wheat;
+                text-decoration:wavy;
+            }
+            .navig
+            {
+                align-content: center;
+                font-size:50px;
+            }
+            .abo
+            {
+                text-align:center;
+            }
+            #hed
+            {
+                color:aliceblue;
+                background-color:burlywood;
+                font-size:30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            #con
+            {
+                color:blanchedalmond;
+                background-color:tomato;
+                font-size:70px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .cont
+            {
+                align-self:center;
+                background-color:deepskyblue;
+                font-size: 30px;
+                font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            }
+            /*nav
+            {
+                nav a
+                {
+                    float:left;
+                }
+                nav b
+                {
+                    float:center;
+                }
+                nav c
+                {
+                    float:right;
+                }
+            }*/
+            
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="navig">
+                <nav>
+                    <a href="home.html">Home</a>     
+                    <a href="search.html">Search</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="about.html">About Us</a>                
+                </nav>
+                <br><br>
+            </div>
+        </center>
+        <div class="abo">
+            <p>
+                <h1 id="hed"><b><u>About Navigations</u></b></h1>
+            </p>
+            <p>
+                <i id="con">
+                    Navigation Bars<br>
+                    Having easy-to-use navigation is important for any web site.<br>                  
+                    With CSS you can transform boring HTML menus into good-looking navigation bars.<br>
+                    Navigation Bar = List of Links<br>
+                    A navigation bar needs standard HTML as a base.<br>
+                    In our examples we will build the navigation bar from a standard HTML list.<br>
+                    A navigation bar is basically a list of links,<br>
+                    so using the ul tag and li tag elements makes perfect sense:<br> 
+                </i>
+            </p>
+        </div>
+        <div class="cont">
+            <section>
+                <div id="contact">
+                    <h2>Contact Us</h2>
+                    <p>
+                        Developer-516xx64168<br>
+                        Manager-654xxxxx466<br>
+                        CEO-xxxxx15xxx<br>
+                        Owner-xxxx5xxxxx<br>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

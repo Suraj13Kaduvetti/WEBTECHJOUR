@@ -1,0 +1,4 @@
+Hello This Is AJAX
+
+AJAX is Nothing but Asynchronous JavaScript And XML
+

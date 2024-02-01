@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css.css"?>
+<Bank_For_Everyone>
+    <title>Hello Everyone! Welcome to Bank Info Section</title>
+    <bankdetails>
+        <accountholdername>ABC</accountholdername>
+        <accountnumber>1234</accountnumber>
+        <accounttype>SAVING</accounttype>
+        <amount>$546978.213</amount>
+        <bankname>XYZ</bankname>
+    </bankdetails>
+    <bankdetails>
+        <accountholdername>DEF</accountholdername>
+        <accountnumber>8765</accountnumber>
+        <accounttype>CURRENT</accounttype>
+        <amount>$879645.54132</amount>
+        <bankname>UVW</bankname>
+    </bankdetails>
+    <bankdetails>
+        <accountholdername>JKL</accountholdername>
+        <accountnumber>4321</accountnumber>
+        <accounttype>SAVING</accounttype>
+        <amount>$647946.21</amount>
+        <bankname>MNO</bankname>
+    </bankdetails>
+    <bankdetails>
+        <accountholdername>GHI</accountholdername>
+        <accountnumber>5678</accountnumber>
+        <accounttype>CURRENT</accounttype>
+        <amount>$54697.21354</amount>
+        <bankname>PQR</bankname>
+    </bankdetails>
+</Bank_For_Everyone>

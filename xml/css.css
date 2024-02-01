@@ -1,0 +1,57 @@
+Bank_For_Everyone 
+{
+    font-size:70px;
+    margin:0.5em;
+    font-family: Verdana;
+    display:block;
+}
+bankdetails 
+{
+    display:block; 
+    border: 1px solid silver;
+    margin:0.5em; 
+    padding:0.5em; 
+    background-color:whitesmoke;
+}
+title 
+{
+    display:block;
+    font-weight:bolder;
+    text-align:center;
+    font-size:60px;
+    background-color:green;
+    color: white;
+}
+accountholdername, accountnumber, accounttype, amount, bankname 
+{
+    display:block;
+    text-align:center;
+}
+accountholdername 
+{
+    color:red; 
+    text-decoration: underline ;
+    font-weight:bolder;
+    font-size:50px;
+}
+accountnumber
+{
+    color:wheat;
+    font-size:40px;
+    text-decoration:dotted;
+}
+accounttype
+{
+    color:salmon;
+    font-size:30px;
+}
+amount
+{
+    color:blue;
+    font-size:20px;
+}
+bankname 
+{ 
+    color:orange;
+    font-size:10px;
+}

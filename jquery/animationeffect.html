@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>JQuery Animation</title>
+        <script src="jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#hide").click(function()
+                {
+                    $("p").hide();
+                });
+                $("#show").click(function()
+                {
+                    $("p").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <br><br><br><br>
+        <center>
+            <div>
+                <p>If you Click on Hide,I will Disapperar</p>
+                <button id="hide">Hide</button>
+                <button id="show">Show</button>        
+            </div>
+        </center>
+    </body>
+</html>
