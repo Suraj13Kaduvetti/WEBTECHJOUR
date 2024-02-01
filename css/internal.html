@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>CSS PROPERTIES TO CHANGE FONTS AND TEXT STYLES</title>
+	<style>
+		.images
+		{
+			background-image:url('web.gif');
+			background-repeat:inherit;
+			background-size:cover;
+			filter:blur(8px);
+			-webkit-filter:blur(8px);
+		}
+		.texts
+		{
+			background-color: rgb(0,0,0); /* Fallback color */
+  			background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  			color: white;
+  			font-weight: bold;
+  			border: 3px solid #f1f1f1;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+  			z-index: 2;
+  			width: 80%;
+  			padding: 20px;
+  			text-align: center;
+		}
+	    .fonts
+	    {
+	        text-align:center;
+	    }
+		.texts
+		{
+			text-align:center;
+		}
+	    h1
+	    {
+	        font-family: 'Courier New', Courier, monospace;
+	        font-weight: 100;
+			color:red;
+	    }
+	    h2
+	    {
+	        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			font-weight: 100;
+	        color:blue;
+	    }
+	    h3
+	    {
+	        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-weight: 100;
+	        color:green;
+	    }
+	    h4
+	    {
+	        font-family:'Times New Roman', Times, serif;
+	        font-weight: 100;
+	        color:yellow;
+	    }
+	    #text2
+	    {
+			font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	        font-weight:100;
+	        color:magenta;
+	    }
+	    #text3
+	    {
+	        font-family:Verdana, Geneva, Tahoma, sans-serif;
+	        font-weight:100;
+            color:orange;
+	    }
+    	</style>
+    </head>
+    <body>
+		<div class="images"></div>
+		<div class="texts">
+			<hr>
+        	<div class="fonts">
+            	<p id="font1"><h1>This Font is Called Courier New</h1></p>
+           		<p id="font2"><h2>This Font is Called Arial</h1></p>
+            	<p id="font3"><h3>This Font is Called Calibri</h1></p>
+        	</div>
+        	<br><hr><br>
+        	<div class="texts">
+            	<p id="text1"><h4>This Text is Written in Times New Roman</h1></p>
+            	<p id="text2"><h5>This Text is Written in Impact</h1></p>
+            	<p id="text3"><h6>This Text is Written in Verdana</h1></p>
+        	</div>
+        	<hr>
+		</div>
+        
+    </body>
+</html>
