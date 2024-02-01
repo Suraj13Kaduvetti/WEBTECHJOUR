@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Window Object in JavaScript</title>
+        <style>
+            body
+            {
+                background-color:yellowgreen;
+            }
+            td
+            {
+                border:5px solid black;
+                border-radius:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <section>
+                <center style="font-size:40px; color:deeppink;"><h1>Window Object</h1></center>
+            </section>
+        </div>
+        <div>
+            <center>
+                <table>
+                    <tr>
+                        <td rowspan="3"><button style="background-color:green;" onclick="openWin()">Open Window</button></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td rowspan="6"><button style="background-color:yellow;" onclick="checkwin()">Check Window</button></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="9"><button style="background-color:red;" onclick="closeWin()">Close Window</button></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <script>
+            let myWindow;
+            let flag;
+
+            function openWin() 
+            {
+                myWindow = window.open("100", "100", "width=200,height=100");
+                flag=false;
+            }
+
+            function closeWin() 
+            {
+                myWindow.close();
+                flag=true;
+            }
+
+            function checkwin() 
+            {
+                if (flag == false) 
+                {
+                    confirm("Window still open");
+                }
+                else 
+                {
+                    confirm("Window closed");
+                }
+            }
+        </script>
+    </body>
+</html>

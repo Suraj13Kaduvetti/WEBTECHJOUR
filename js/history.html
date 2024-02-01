@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Window History Object in JavaScript</title>
+        <style>
+            body
+            {
+                background-color:yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <section>
+                <center style="font-size:40px; color:deeppink;"><h1>Window History Object</h1></center>
+            </section>
+        </div>
+        <script>
+            var br = "<br>";
+            let length = window.history.length;
+            document.write("Example of Window History Length : " + length + br);
+            let backward = window.history.backward;
+            document.write("Example of Window History Backward : " + backward + br);
+            let forward = window.history.forward;
+            document.write("Example of Window History Forward : " + forward + br);
+            let go = window.history.go;
+            document.write("Example of Window History Go : " + go + br);
+        </script>
+    </body>
+</html>

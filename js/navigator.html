@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Window Navigator Object in JavaScript</title>
+        <style>
+            body
+            {
+                background-color:yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <section>
+                <center style="font-size:40px; color:deeppink;"><h1>Window Navigator Object</h1></center>
+            </section>
+        </div>
+        <script>
+            var br = "<br>";
+            let language = window.navigator.language;
+            document.write("Example of Window Navigator Language : " + language + br);
+            let geolocation = window.navigator.geolocation;
+            document.write("Example of Window Navigator GeoLocation : " + geolocation + br);
+            let online = window.navigator.online;
+            document.write("Example of Window Navigator Online : " + online + br);
+            let cookieenable = window.navigator.cookieEnabled;
+            document.write("Example of Window Navigator CookieEnabled : " + cookieenable + br);
+        </script>
+    </body>
+</html>

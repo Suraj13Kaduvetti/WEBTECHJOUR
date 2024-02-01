@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>String Object in JavaScript</title>
+        <style>
+            body
+            {
+                background-color:pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <section>
+                <center style="font-size:40px; color:darkred;"><h1>String Object</h1></center>
+            </section>
+        </div>
+        <script>
+            var br = "<br>"
+            let text = "HELLO TO JAVASCRIPT!!!";
+            document.write(text);
+            let letter = text.charAt(0);
+            document.write("Example of charAt() Method : " + letter + br);
+            let text1 = "sea";
+            let text2 = "food";
+            document.write(text1 + text2);
+            let result = text1.concat(text2);
+            document.write("Example of concat() Method : " + result + br);
+            let message = text.constructor;
+            document.write("Example of constructor Method : " + message + br);
+            let result1 = text.indexOf("TO");
+            document.write("Example of indexof() Method : " + result1 + br);
+            let a = text.match("A");
+            document.write("Example of match() Method : " + a + br);
+            let result2 = text.valueOf();
+            document.write("Example of valueOf() Method : " + result2 + br);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>RegularExpression (RegExp) Object in JavaScript</title>
+        <style>
+            body
+            {
+                background-color:pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <section>
+                <center style="font-size:40px; color:darkred;"><h1>RegExp Object</h1></center>
+            </section>
+        </div>
+        <script>
+            document.write("Modifiers");
+            let text = "Is this all there is?";
+            let pattern = /is/g; 
+            let result = text.match(pattern);
+            document.write("Example of g Modofier : " + result);
+            document.write("Groups");
+            let text1 = "123456789";
+            let pattern1 = /[1-4]/g;
+            let result1 = text1.match(pattern1);
+            document.write("Example of [0-9] Groups : " + result1);
+            document.write("Metacharacters");
+            let pattern2 = /\S/g;
+            let result2 = text.match(pattern2);
+            document.write("Example of \S Metacharacters : " + result2);
+            document.write("Quantifiers");
+            let pattern3 = /is$/;
+            let result3 = text.match(pattern3);
+            document.write("Example of $ Quantifiers : " + result3);
+            document.write("Properties");
+            let pattern4 = /all/g;
+            let result4 = pattern4.source;
+            document.write("Example of  source Properties : " + result4);
+            document.write("Methods");
+            let text2 = "The best things in life are free";
+            let result5 = /e/.exec(text2);
+            document.write("Example of  exec Methods : " + result5);
+        </script>
+    </body>
+</html>

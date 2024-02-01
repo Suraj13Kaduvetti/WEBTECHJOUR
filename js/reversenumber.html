@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>Program to find the Reverse of a Number</title>
+        <style>
+            body
+            {
+                background-color: dodgerblue;
+            }
+            h1
+            {
+                color:forestgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <center style="text-align:center; font-family:arial; font-size:40px;">
+                <p>
+                    <u>
+                        <h1 style="color:orange">Program to find the Reverse of a Number Using the Two Ways given below</h1>
+                    </u>
+                </p>
+            </center>
+        </header>
+        <article>
+            <div class="fact">
+                <section class="or" id="ial">
+                    <center style="border:2px dashed navy; background-color:yellowgreen;">
+                        <div id="stat">
+                            <h1>Program to find the Reverse of a Number of a number in Static way or Pre-Defined Variables</h1>
+                            <b><h2>Click on the button for getting the Reverse of a Number</h2></b>
+                            <button id="a1" onclick = "revnum1()"> Submit</button>
+                            <p id = "ans">See the Answer Here</p>
+                            <script>
+                                function flipInt1(n1)
+                                {
+                                    var digit1, result1 = 0;                
+                                    while( n1 )
+                                    {
+                                        digit1 = n1 % 10  //  Get right-most digit. Ex. 123/10 → 12.3 → 3
+                                        result1 = (result1 * 10) + digit1  //  Ex. 123 → 1230 + 4 → 1234
+                                        n1 = n1/10|0  //  Remove right-most digit. Ex. 123 → 12.3 → 12
+                                    }                       
+                                    return result1;
+                                }
+                                function revnum1()
+                                {
+                                    var n1 = 1234506789;
+                                    var f1 = flipInt1(n1);
+                                    document.getElementById("ans").innerHTML="The number given is " + n1 + " and the Reverse of the number " + n1 + " is " + f1;
+                                }
+                                    
+                                    /*// Usage: 
+                                    alert(
+                                      "Reversed number: " + flipInt( +prompt("Enter a value") ) 
+                                    );*/
+                            </script>
+                        </div>
+                    </center>
+                    <center>
+                        <div>
+                            <br>
+                            <hr style="color:crimson; background-color:crimson;">
+                            <p style="background-color:aliceblue; color:olive; font-size:20px; font-family:georgia;">
+                                -x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+                            </p>
+                            <hr style="color:crimson; background-color:crimson;">
+                            <br>
+                        </div>
+                    </center>
+                    <center style="border:2px dotted blue; background-color:yellow;">
+                        <div id="dyan">
+                            <h1>Program to find the Reverse of a Number of a number in Dynamic way or User-Defined Variables</h1>
+                            <b style="font-family:times; font-size:20px;">Enter a number: </b><input id = "number" placeholder="Enter Here">
+                            <br>
+                            <b><h2>Click on the button for getting the Reverse of a Number</h2></b>
+                            <button id="a2" onclick = "revnum2()" size="50px">Submit</button>
+                            <!--<button onclick="">Reset</button>-->
+                            <p id = "res">See the Answer Here</p>
+                            <script>
+                                function flipInt2(n2){
+                                    var digit2, result2 = 0;
+                                    while( n2 )
+                                    {
+                                        digit2 = n2 % 10  //  Get right-most digit. Ex. 123/10 → 12.3 → 3
+                                        result2 = (result2 * 10) + digit2  //  Ex. 123 → 1230 + 4 → 1234
+                                        n2 = n2/10|0  //  Remove right-most digit. Ex. 123 → 12.3 → 12
+                                    }
+                                    return result2;
+                                }
+                                function revnum2()
+                                {
+                                    var n2;
+                                    n2 = document.getElementById("number").value;
+                                    var f2 = flipInt2(n2);
+                                    document.getElementById("res").innerHTML="The number given is " + n2 + " and the Reverse of the number " + n2 + " is " + f2;
+                                }
+                                /*// Usage: 
+                                alert(
+                                  "Reversed number: " + flipInt( +prompt("Enter a value") ) 
+                                );*/
+                            </script>
+                        </div>
+                    </center>
+                    <center>
+                        <div>
+                            <br>
+                            <hr style="color:crimson; background-color:crimson;">
+                            <p style="background-color:aliceblue; color:olive; font-size:20px; font-family:georgia;">
+                                -x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+                            </p>
+                            <hr style="color:crimson; background-color:crimson;">
+                            <br>
+                        </div>
+                    </center>
+                    <center style="border:2px solid black; background-color:coral;">
+                        <div id="pop">                    
+                            <h1>Program to find the Fatorial in Dynaimic Way by using Pop-ups</h1>
+                            <p><b><h2>Click on the button to get the Reverse of a Number</h2></b></p>
+                            <br>
+                            <button id="a3" onclick="revnum()" size="50px">Click Here</button>
+                            <br><br>
+                            <p id = "ser">See the Answer Here</p>
+                            <br>
+                            <script>
+                                function revnum()
+                                {
+                                    function flipInt3(n3)
+                                    {
+                                        var digit3, result3 = 0;
+                                        while( n3 )
+                                        {
+                                            digit3 = n3 % 10  //  Get right-most digit. Ex. 123/10 → 12.3 → 3
+                                            result3 = (result3 * 10) + digit3  //  Ex. 123 → 1230 + 4 → 1234
+                                            n3 = n3/10|0  //  Remove right-most digit. Ex. 123 → 12.3 → 12
+                                        } 
+                                        return result3;
+                                    }
+                                    //alert("Reversed number: " + flipInt3( +prompt("Enter a value")));
+                                    var n3 = prompt("Enter a value: ");
+                                    var f3 = flipInt3(n3);
+                                    document.getElementById("ser").innerHTML="The number given is " + n3 + " and the Reverse of the number " + n3 + " is " + f3;
+                                }
+                            </script>
+                        </div>
+                    </center>
+                </section>
+            </div>
+        </article>
+    </body>
+</html>
+
+

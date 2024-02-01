@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Window Document Object in JavaScript</title>
+        <style>
+            body
+            {
+                background-color:yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <section>
+                <center style="font-size:40px; color:deeppink;"><h1>Window Document Object</h1></center>
+            </section>
+        </div>
+        <script>
+            var br = "<br>";
+            let url = window.document.URL;
+            document.write("Example of Window Document URL : " + url + br);
+            let domain = window.document.domain;
+            document.write("Example of Window Document Domain : " + domain + br);
+            let cookie = window.document.cookie;
+            document.write("Example of Window Document Cookie : " + cookie + br);
+            let activeelement = window.document.activeElement;
+            document.write("Example of Window Document activeElement : " + activeelement + br);
+        </script>
+    </body>
+</html>

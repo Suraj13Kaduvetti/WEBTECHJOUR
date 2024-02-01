@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Program to find the Factorial of a number</title>
+        <style>
+            body
+            {
+                background-color: dodgerblue;
+            }
+            h1
+            {
+                color:forestgreen;
+            }
+            /*#a1 #a2
+            {
+                color:indigo;
+            }*/
+        </style>
+    </head>
+    <body>
+        <header>
+            <center style="text-align:center; font-family:arial; font-size:40px;">
+                <p>
+                    <u>
+                        <h1 style="color:orange">Program to find the Factorial Using the Two Ways given below</h1>
+                    </u>
+                </p>
+            </center>
+        </header>
+        <article>
+            <div class="fact">
+                <section class="or" id="ial">
+                    <center style="border:2px dashed navy; background-color:yellowgreen;">
+                        <div id="stat">
+                            <h1>Program to find the Factorial of a number in Static way or Pre-Defined Variables</h1>
+                            <b><h2>Click on the button for getting the Factorial</h2></b>
+                            <button id="a1" onclick = "fact2()"> Submit</button>
+                            <p id = "ans">See the Answer Here</p>
+                            <script>
+                                function fact1(num1)   
+                                {  
+                                    if (num1 == 0)
+                                    {  
+                                        return 1;  
+                                    }  
+                                    else
+                                    {  
+                                        return num1 * fact1( num1 - 1 );  
+                                    }  
+                                }  
+                                function fact2()  
+                                {  
+                                    //var num1 = document.getElementById("number").value;
+                                    var num1;
+                                    num1 = 10;      
+                                    var f1 = fact1(num1);  
+                                    document.getElementById("ans").innerHTML="The number given is: " + num1 + " And the Factorial of " + num1 + " is: " + f1 ;
+                                }
+                            </script>
+                        </div>
+                    </center>
+                    <center>
+                        <div>
+                            <br>
+                            <hr style="color:crimson; background-color:crimson;">
+                            <p style="background-color:aliceblue; color:olive; font-size:20px; font-family:georgia;">
+                                -x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+                            </p>
+                            <hr style="color:crimson; background-color:crimson;">
+                            <br>
+                        </div>
+                    </center>
+                    <center style="border:2px dotted blue; background-color:yellow;">
+                        <div id="dyan">
+                            <h1>Program to find the Factorial of a number in Dynamic way or User-Defined Variables</h1>
+                            <b style="font-family:times; font-size:20px;">Enter a number: </b><input id = "number" placeholder="Enter Here">
+                            <br>
+                            <b><h2>Click on the button for getting the Factorial</h2></b>
+                            <button id="a2" onclick = "fact4()" size="50px">Submit</button>
+                            <!--<button onclick="">Reset</button>-->
+                            <p id = "res">See the Answer Here</p>
+                            <script>
+                                function fact3(num2)   
+                                {  
+                                    if (num2 == 0)
+                                    {  
+                                        return 1;  
+                                    }  
+                                    else
+                                    {  
+                                        return num2 * fact3( num2 - 1 );  
+                                    }  
+                                }  
+                                function fact4()  
+                                {  
+                                    var num2 = document.getElementById("number").value;  
+                                    var f2 = fact3(num2);  
+                                    document.getElementById("res").innerHTML="The number given is: " + num2 + " And the Factorial of " + num2 + " is: " + f2 ;
+                                }
+                            </script>
+                        </div>
+                    </center>
+                    <center>
+                        <div>
+                            <br>
+                            <hr style="color:crimson; background-color:crimson;">
+                            <p style="background-color:aliceblue; color:olive; font-size:20px; font-family:georgia;">
+                                -x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+                            </p>
+                            <hr style="color:crimson; background-color:crimson;">
+                            <br>
+                        </div>
+                    </center>
+                    <center style="border:2px solid black; background-color:coral;">
+                        <div id="pop">                    
+                            <h1>Program to find the Fatorial in Dynaimic Way by using Pop-ups</h1>
+                            <p><b><h2>Click on the button to get the Factorial</h2></b></p>
+                            <br>
+                            <button id="a3" onclick="factfun()" size="50px">Click Here</button>
+                            <br><br>
+                            <p id = "ser">See the Answer Here</p>
+                            <br>
+                            <script>
+                                function factfun()
+                                {
+                                    var num3 = prompt("Enter a value: ")
+                                    function fact5(num3)   
+                                    {  
+                                        if (num3 == 0)
+                                        {  
+                                            return 1;  
+                                        }  
+                                        else
+                                        {  
+                                            return num3 * fact5( num3 - 1 );  
+                                        }  
+                                    }
+                                    //var num3 = document.getElementById("number").value;  
+                                    var f3 = fact5(num3);  
+                                    document.getElementById("ser").innerHTML="The number given is: " + num3 + " And the Factorial of " + num3 + " is: " + f3 ;                    
+                                    }
+                            </script>
+                        </div>
+                    </center>
+                </section>
+            </div>
+        </article>
+    </body>
+</html>
+  

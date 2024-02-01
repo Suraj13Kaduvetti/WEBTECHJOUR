@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Date Object in JavaScript</title>
+        <style>
+            body
+            {
+                background-color:pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <section>
+                <center style="font-size:40px; color:darkred;"><h1>Date Object</h1></center>
+            </section>
+        </div>
+        <script>
+            var br = "<br>";
+            const d = new Date();
+            document.write("Date : " + d + br);
+            const d1 = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+            document.write("Date 2 : " + d1 + br);
+            let diff = d.getTimezoneOffset();
+            document.write("Offset of Time Zone : " + diff + br);
+            let ms = Date.now();
+            document.write("Date now Function : " + ms + br);
+        </script>
+    </body>
+</html>
